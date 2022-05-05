@@ -1,0 +1,206 @@
+#root{
+    font-family: Amiri;
+    font-size: 20px;
+    overflow-x: hidden;
+}
+
+.mobileWarning{
+    display:block;
+    position:absolute;
+    width: 100vw;   
+    top:0%;
+    left:0%;
+    padding-top:40vh;
+    background-color: #eeecea;
+    text-align: center;
+    color:#2D2D34;
+}
+body{
+    background-color: #eeecea;
+}
+.page{
+    display:none;
+}
+
+@media only screen and (min-width: 600px) {
+    .page{
+        display:block;
+    }
+    .mobileWarning{
+        height:0px;
+        width:0px;
+        display:none;
+    }
+
+    .navbar{
+        height:75px;
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        padding-left: 6vw;
+        padding-right:6vw;
+        padding-top:5vh;
+        margin-bottom: 5vh;
+    }
+    
+    body{
+        color:#2D2D34;
+        margin:0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 40%;
+        background-position: center;
+        background-color: #eeecea;
+        background-image: url("/sqq.png");
+        height:100vh;
+    }
+    
+    .container{
+        padding-bottom:10vh;
+    }
+    
+    .links{
+        
+        padding-left:50%;
+    }
+    
+    .linkpair{
+        margin-left:-19.5vw;
+        display:grid;
+        grid-template-columns: 20vw 19vw;
+        font-size:28px;
+    }
+    
+    .linkpair div:nth-of-type(odd){
+        color:#2D6249;
+        text-align: right;
+        padding-right: 1vw;
+    }
+    
+    .linkpair div:nth-of-type(even){
+        text-align: left;
+        color:#b6b2ae;
+    }
+    
+    .filmcont{
+        width:100%;
+        position:absolute;
+        top:50%;
+        margin-top:-2.5vh;
+        height: 5vh;
+        background-color: #2D6249;
+    }
+    
+    .greenbox{
+        margin-left: 47%;
+        padding-top:10px;
+        color:#eeecea;
+    }
+    
+    .spacerfull{
+        height:100vh;
+    }
+    
+   
+    
+    .info{
+        width:100%;
+        display:grid;
+        grid-template-rows: 3fr auto auto auto 3fr;
+    }
+    .title{
+        color:#2D6249;
+        padding:0px;
+        font-size:50px;
+        font-weight:bold;
+        margin-bottom:-3vh;
+    }
+
+    .artContainer{
+        margin: 0 auto;
+        height:10em;
+        width:55vw;
+        display:grid;
+        grid-template-columns: auto 6vw 500px;
+        margin-bottom:10vh;
+    }
+
+    .image{
+        float:right;
+        height:10em;
+        width:10em;
+    }
+
+    .actualPic{
+        height:100%;
+        width:100%;
+    }
+    .date{
+        color:inherit;
+        font-size:30px;
+        margin-bottom:-1.5vh;
+    }
+    .comment{
+        color:#b6b2ae;
+        font-size:25px;
+    }
+    
+    
+    
+    .middleArt{
+        padding-bottom: 10vh;
+    }
+    
+    a{
+        text-decoration: none;
+        color:#2D2D34;
+        margin:0px;
+    }
+    
+    
+    
+    .navLinkList{
+        padding-left:0px;
+        float:right;
+        width:auto;
+        list-style-type: none;
+        margin-top: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+}
+
+
+@media only screen and (min-width: 800px){
+    .artContainer{
+        margin: 0 auto;
+        height:40vw;
+        width:55vw;
+        display:grid;
+        grid-template-columns: auto 6vw 500px;
+        margin-bottom:10vh;
+    }
+
+    .image{
+        float:right;
+        height:40vw;
+        width:40vw;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .artContainer{
+        margin: 0 auto;
+        height:50vh;
+        width:55vw;
+        display:grid;
+        grid-template-columns: auto 6vw 500px;
+        margin-bottom:10vh;
+    }
+
+    .image{
+        float:right;
+        height:50vh;
+        width:50vh;
+    }
+}
